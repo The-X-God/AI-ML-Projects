@@ -1,41 +1,74 @@
-# 🌸 Iris Flower Classification
 
-## 📌 About Project
+# 🌸 Iris Flower Classification V2
 
-This is my first Machine Learning project.
+### Created by The-X-God
 
-The goal is to predict the species of an Iris flower using its measurements.
+A Machine Learning project that predicts Iris flower species using a Random Forest Classifier.
 
-## 🧠 What is Machine Learning?
+## 🚀 Features
 
-Machine Learning allows computers to learn patterns from data and make predictions.
-
-## 📊 Dataset
-
-We will use the famous Iris dataset containing three flower species:
-
-* Setosa
-* Versicolor
-* Virginica
+- Iris Dataset Loading
+- Random Forest Classification
+- Model Accuracy Calculation
+- Classification Report
+- Confusion Matrix
+- Accuracy Visualization
+- New Flower Prediction
 
 ## 🛠️ Technologies Used
 
-* Python
-* Scikit-learn
-* Pandas
-* Matplotlib
+- Python
+- Scikit-learn
+- Matplotlib
+- NumPy
 
-## 🎯 Project Goals
+## 📊 Model Performance
 
-* Understand a Machine Learning dataset
-* Train a classification model
-* Predict Iris flower species
-* Learn model accuracy
+- Model: Random Forest Classifier
+- Test Size: 20%
+- Accuracy: 100%
 
-## 🚧 Status
+## 📈 Visualizations
 
-Project setup – In progress.
+The project generates:
+
+1. Confusion Matrix
+2. Model Accuracy Graph
+
+## ▶️ How to Run
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the project:
+
+```bash
+python iris_model.py
+```
+
+## 🌺 Sample Prediction
+
+Input:
+
+```python
+[5.1, 3.5, 1.4, 0.2]
+```
+
+Output:
+
+```text
+setosa
+```
+
+## 👨‍💻 Author
+
+**The-X-God**
+
+GitHub: https://github.com/The-X-God
 
 ---
 
-Created by **The-X-God** 👑
+⭐ If you like this project, consider giving it a star!
