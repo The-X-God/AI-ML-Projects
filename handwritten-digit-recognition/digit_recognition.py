@@ -42,20 +42,27 @@ print("Model Accuracy:", round(accuracy * 100, 2), "%")
 print("\n📊 CLASSIFICATION REPORT")
 print(classification_report(y_test, predictions))
 
-# Predict a Sample Digit
-sample_index = 0
-sample = X_test[sample_index].reshape(1, -1)
+# Predict Multiple Sample Digits
 
-prediction = model.predict(sample)
+print("\n🔢 MULTIPLE DIGIT PREDICTIONS")
+print("--------------------------------")
 
-print("\nPredicted Digit:", prediction[0])
-print("Actual Digit:", y_test[sample_index])
+for i in range(5):
 
-# Display Sample Digit
-plt.imshow(
-    X_test[sample_index].reshape(8, 8),
-    cmap="gray"
-)
+    sample = X_test[i].reshape(1, -1)
+
+    prediction = model.predict(sample)
+
+    print("Sample", i + 1)
+    print("Predicted Digit:", prediction[0])
+    print("Actual Digit:", y_test[i])
+
+    if prediction[0] == y_test[i]:
+        print("Result: Correct ✅")
+    else:
+        print("Result: Incorrect ❌")
+
+    print("--------------------------------")
 
 plt.title(f"Predicted Digit: {prediction[0]}")
 plt.axis("off")
